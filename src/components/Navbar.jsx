@@ -3,11 +3,11 @@ import logo from "../assets/logo.png";
 import profilePic from "../assets/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { far } from "@fortawesome/free-regular-svg-icons";
+import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 export default function Navbar() {
   return (
-    <section className="p-5 bg-[#e5e5e5] flex justify-between border-b-2">
+    <section className="p-5 w-full bg-[#e5e5e5] flex justify-between border-b-2 border-[dodgerblue] fixed">
       {/* Navbar Left */}
       <div className="flex gap-5 items-center">
         {/* Logo */}
@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="flex items-center gap-5">
         {/* Notification Icon */}
         <div>
-          <FontAwesomeIcon icon={far.faBell} style={{fontSize: "20px"}} />
+          <FontAwesomeIcon icon={faBell} style={{fontSize: "20px"}} />
         </div>
         {/* Profile */}
         <div className="flex items-center gap-1.5 cursor-pointer">
