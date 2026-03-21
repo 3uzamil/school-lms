@@ -15,14 +15,14 @@ export default function Navbar() {
           <img src={logo} alt="logo" width={50} />
         </figure>
         {/* School Name */}
-        <h1 className="font-bold text-[#242424] text-[20px]">
+        <h1 className="font-bold text-[#242424] md:text-[20px] text-[15px]">
           School LMS - Student Portal
         </h1>
       </div>
       {/* Navbar Right */}
       <div className="flex items-center gap-5">
         {/* Notification Icon */}
-        <div>
+        <div className="hidden md:block">
           <FontAwesomeIcon icon={faBell} style={{fontSize: "20px"}} />
         </div>
         {/* Profile */}
@@ -31,10 +31,12 @@ export default function Navbar() {
           <figure>
             <img src={profilePic} width={30} className="rounded-[50px]" />
           </figure>
+          <div className="hidden md:flex items-center gap-1.5">
           {/* User Name */}
           <h2 className="font-semibold">Muzamil Hussain</h2>
           {/* Angle Icon for Profile menu */}
           <FontAwesomeIcon icon={faAngleDown} />
+          </div>
         </div>
       </div>
     </section>

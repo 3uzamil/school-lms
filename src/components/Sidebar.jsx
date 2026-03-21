@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <section className="h-screen flex justify-start">
+    <section className="h-screen md:flex hidden justify-start">
       <div className="h-full w-50 bg-[#e5e5e5] flex gap-5 pl-5">
         <div className="flex basis-[80%] flex-col gap-8 mt-20">
           <div className="flex items-center gap-2 cursor-pointer">
