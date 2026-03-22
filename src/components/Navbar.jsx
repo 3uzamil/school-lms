@@ -7,7 +7,7 @@ import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 export default function Navbar() {
   return (
-    <section className="px-5 w-full bg-[#e5e5e5] flex justify-between border-b-2 border-[dodgerblue] fixed">
+    <section className="px-5 w-full bg-[#e5e5e5] flex justify-between border-b-2 border-[dodgerblue] md:fixed z-10">
       {/* Navbar Left */}
       <div className="flex gap-5 items-center">
         {/* Logo */}

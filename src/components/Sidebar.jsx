@@ -1,15 +1,20 @@
-import {faCalendar,faFileLines,faHome,} from "@fortawesome/free-regular-svg-icons";
-import {faAngleLeft,faBookOpen,faBullhorn,faGraduationCap, faWallet,} from "@fortawesome/free-solid-svg-icons";
+import { faSlack } from "@fortawesome/free-brands-svg-icons";
+import {faCalendar,faFileLines,} from "@fortawesome/free-regular-svg-icons";
+import {faAngleLeft,faAngleRight,faBookOpen,faBullhorn,faGraduationCap, faWallet,} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Sidebar() {
+  let [shiftSide,setShiftSide] = useState(false);
+  let sideBarShift = () => {
+    setShiftSide(!shiftSide);
+  };
   return (
     <section className="h-screen md:flex hidden justify-start">
-      <div className="h-full w-50 bg-[#e5e5e5] flex gap-5 pl-5">
+      <div className={`h-full w-50 bg-[#e5e5e5] flex gap-5 pl-5 duration-600 ${shiftSide? "-translate-x-45" : ""}`}>
         <div className="flex basis-[80%] flex-col gap-8 mt-20">
           <div className="flex items-center gap-2 cursor-pointer">
-            <FontAwesomeIcon icon={faHome} />
+            <FontAwesomeIcon icon={faSlack} />
             <h3>Dashboard</h3>
           </div>
           <div className="flex items-center gap-2 cursor-pointer">
@@ -38,7 +43,7 @@ export default function Sidebar() {
           </div>
         </div>
         <div className="bg-[dodgerblue] flex items-center">
-          <FontAwesomeIcon icon={faAngleLeft} className="cursor-pointer bg-white text-[dodgerblue] py-2"/>
+          <FontAwesomeIcon onClick={sideBarShift} icon={shiftSide? faAngleRight : faAngleLeft} className="cursor-pointer bg-white text-[dodgerblue] py-2"/>
         </div>
       </div>
     </section>
