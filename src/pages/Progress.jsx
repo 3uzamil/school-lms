@@ -14,7 +14,7 @@ export default function Progress() {
           <Sidebar />
         </section>
         {/* Page Content */}
-        <section className="flex items-start h-full pt-30">
+        <section className="pt-20">
           <h1>Progress</h1>
         </section>
       </section>

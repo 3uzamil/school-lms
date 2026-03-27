@@ -14,7 +14,7 @@ export default function Attendance() {
           <Sidebar />
         </section>
         {/* Page Content */}
-        <section className="flex items-start h-full pt-30">
+        <section className="pt-20">
           <h1>Attendance</h1>
         </section>
       </section>
