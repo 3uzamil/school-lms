@@ -14,8 +14,14 @@ export default function Dashboard() {
           <Sidebar />
         </section>
         {/* Page Content */}
-        <section className="flex items-start h-full pt-30">
-          <h1>Welcome</h1>
+        <section className="pt-20">
+          <h1 className="font-bold text-[20px]">Welcome!</h1>
+          <span>Today is Tuesday, Octuber 26th.</span>
+
+          <section className="w-[70vw] my-5 px-3 py-4 rounded-[10px] bg-white">
+            <h1>My Courses</h1>
+          </section>
+          
         </section>
       </section>
     </>
