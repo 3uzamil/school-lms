@@ -19,7 +19,7 @@ export default function Sidebar() {
   };
   return (
     <div
-      className={`h-full bg-[#e5e5e5] md:flex gap-5 pl-5 duration-600 ${shiftSide ? "-translate-x-45" : ""} hidden`}
+      className={`h-screen fixed bg-[#e5e5e5] md:flex gap-5 pl-5 duration-600 ${shiftSide ? "-translate-x-45" : ""} hidden`}
     >
       <div className="flex basis-[80%] flex-col gap-8 mt-20">
         <Link to={"/"}>
@@ -39,12 +39,6 @@ export default function Sidebar() {
           <div className="flex items-center gap-2 cursor-pointer">
             <FontAwesomeIcon icon={faCalendar} />
             <h3>Attendance</h3>
-          </div>
-        </Link>
-        <Link to={"/assignment"}>
-          <div className="flex items-center gap-2 cursor-pointer">
-            <FontAwesomeIcon icon={faFileLines} />
-            <h3>Assignment</h3>
           </div>
         </Link>
         <Link to={"/grade"}>

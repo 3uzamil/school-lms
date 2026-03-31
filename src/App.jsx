@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
-import Assignment from "./pages/Assignment";
 import Announcement from "./pages/Announcement";
 import Attendance from "./pages/Attendance";
 import Grade from "./pages/Grade";
@@ -20,10 +17,6 @@ export default function App() {
     {
       path: "attendance",
       element: <Attendance />
-    },
-    {
-      path: "assignment",
-      element: <Assignment />
     },
     {
       path: "announcement",
