@@ -15,16 +15,26 @@ export default function Dashboard() {
           <Sidebar />
         </section>
         {/* Page Content */}
-        <section className="w-screen md:mt-20 md:ml-50">
+        <section className="w-screen mt-5 md:mt-20 md:ml-50">
           <h1 className="font-bold text-[20px]">Welcome!</h1>
           <span>Today is Tuesday, Octuber 26th.</span>
-          <section className="w-[70vw] my-5 px-3 py-4 rounded-[10px] bg-white">
+          <section className="md:w-[70vw] flex md:flex-row flex-col gap-5 justify-between mr-5 my-5">
+          <section className="md:w-[33vw] px-3 py-4 rounded-[10px] bg-white">
             <h1>Attendance</h1>
-            <div className=" h-10 w-50 border-2 flex justify-start px-2 items-center my-2 rounded-[10px] cursor-pointer">
-              <h1>100 /<span className="text-[dodgerblue]"> 90</span></h1>
+            <div className=" h-10 w-50 border-2 flex justify-between pl-2 items-center my-2 rounded-[10px]">
+              <h1>100 /<span className="text-blue-600"> 90</span></h1>
+              <span className="bg-blue-600 py-1.5 px-3 rounded-r-lg text-white cursor-pointer">View</span>
             </div>
           </section>
-          <section className="w-[70vw] my-5 px-3 py-4 rounded-[10px] bg-white">
+          <section className="md:w-[33vw] px-3 py-4 rounded-[10px] bg-white">
+            <h1>Dues</h1>
+            <div className=" h-10 w-50 border-2 flex justify-between pl-2 items-center my-2 rounded-[10px]">
+              <h1>Rs. 5000</h1>
+              <span className="bg-blue-600 py-1.5 px-3 rounded-r-lg text-white cursor-pointer">Pay now</span>
+            </div>
+          </section>
+          </section>
+          <section className="md:w-[70vw] mr-5 my-5 px-3 py-4 rounded-[10px] bg-white">
             <h1>Active Courses</h1>
             {/* <span>https://www.instagram.com/reels/DVRdsnKDJX2/</span> */}
             <div className="flex flex-wrap">
@@ -63,8 +73,8 @@ export default function Dashboard() {
               </Progress_Dash>
             </div>
           </section>
-          <section className="w-[70vw] my-5 px-3 py-4 rounded-[10px] bg-white">
-            <h1>Fee Dues</h1>
+          <section className="md:w-[70vw] mr-5 my-5 px-3 py-4 rounded-[10px] bg-white">
+            
           </section>
         </section>
       </section>

@@ -19,9 +19,9 @@ export default function Sidebar() {
   };
   return (
     <div
-      className={`h-screen fixed bg-[#e5e5e5] md:flex gap-5 pl-5 duration-600 ${shiftSide ? "-translate-x-45" : ""} hidden`}
+      className={`h-screen fixed bg-[#e5e5e5] md:flex gap-5 px-5 border-r-2 border-[dodgerblue] duration-600 hidden`}
     >
-      <div className="flex basis-[80%] flex-col gap-8 mt-20">
+      <div className="flex flex-col gap-8 mt-20">
         <Link to={"/"}>
           <div className="flex items-center gap-2 cursor-pointer">
             <FontAwesomeIcon icon={faSlack} />
@@ -59,13 +59,6 @@ export default function Sidebar() {
             <h3>Announcement</h3>
           </div>
         </Link>
-      </div>
-      <div className="bg-[dodgerblue] flex items-center">
-        <FontAwesomeIcon
-          onClick={sideBarShift}
-          icon={shiftSide ? faAngleRight : faAngleLeft}
-          className="cursor-pointer bg-white text-[dodgerblue] py-2"
-        />
       </div>
     </div>
   );
