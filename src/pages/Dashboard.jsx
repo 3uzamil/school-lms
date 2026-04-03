@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Progress_Dash from "../components/Progress_Dash";
+import { Link } from "react-router";
 
 export default function Dashboard() {
   return (
@@ -23,14 +24,16 @@ export default function Dashboard() {
             <h1>Attendance</h1>
             <div className=" h-10 w-50 border-2 flex justify-between pl-2 items-center my-2 rounded-[10px]">
               <h1>100 /<span className="text-blue-600"> 90</span></h1>
-              <span className="bg-blue-600 py-1.5 px-3 rounded-r-lg text-white cursor-pointer">View</span>
+              <Link to={"/attendance"}>
+              <button className="h-9 bg-blue-600 px-3 rounded-r-lg text-white cursor-pointer">View</button>
+              </Link>
             </div>
           </section>
           <section className="md:w-[33vw] px-3 py-4 rounded-[10px] bg-white">
             <h1>Dues</h1>
             <div className=" h-10 w-50 border-2 flex justify-between pl-2 items-center my-2 rounded-[10px]">
               <h1>Rs. 5000</h1>
-              <span className="bg-blue-600 py-1.5 px-3 rounded-r-lg text-white cursor-pointer">Pay now</span>
+              <button className="h-9 bg-blue-600 px-3 rounded-r-lg text-white cursor-pointer">Pay now</button>
             </div>
           </section>
           </section>
