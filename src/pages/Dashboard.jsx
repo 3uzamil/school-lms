@@ -13,7 +13,7 @@ export default function Dashboard() {
       <section className=" h-screen flex gap-5">
         {/* Sidebar Bar Section*/}
         <section>
-          <Sidebar />
+          <Sidebar pageName={"dashboard"}/>
         </section>
         {/* Page Content */}
         <section className="w-screen mt-5 md:mt-20 md:ml-50">

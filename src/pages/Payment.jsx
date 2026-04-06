@@ -11,7 +11,7 @@ export default function Payment() {
       <section className=" h-screen flex gap-5">
         {/* Sidebar Bar Section*/}
         <section>
-          <Sidebar />
+          <Sidebar pageName={"payment"}/>
         </section>
         {/* Page Content */}
         <section className="pt-20">

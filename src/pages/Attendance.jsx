@@ -34,7 +34,7 @@ export default function Attendance() {
       <section className=" h-screen flex gap-5">
         {/* Sidebar Bar Section*/}
         <section>
-          <Sidebar />
+          <Sidebar pageName={"attendance"}/>
         </section>
         {/* Page Content */}
         <section className="w-screen mt-5 md:mt-20 md:ml-50">
